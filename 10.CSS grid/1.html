@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SampleGrid</title>
+    <style>
+      .container {
+        height: 97vh;
+        display: grid;
+        gap: 10px;
+      }
+      .child {
+        border-radius: 10px;
+        border: transparent;
+      }
+      .image1 {
+        background-image: url("https://picsum.photos/500/200");
+        background-size: cover;
+        grid-column: 1 / span 2;
+      }
+      .image2 {
+        background-image: url("http://placekitten.com/200/300");
+        background-size: cover;
+        grid-column: 3;
+      }
+      .image3 {
+        background-image: url("https://picsum.photos/200/300");
+        background-size: cover;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+      }
+      .image4 {
+        background-image: url("http://placekitten.com/200/300");
+        background-size: cover;
+      }
+      .image5 {
+        background-image: url("http://placekitten.com/g/200/300");
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 2 / span 2;
+      }
+      .image6 {
+        background-image: url("https://picsum.photos/200/300");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child image1"></div>
+      <div class="child image2"></div>
+      <div class="child image3"></div>
+      <div class="child image4"></div>
+      <div class="child image5"></div>
+      <div class="child image6"></div>
+    </div>
+  </body>
+</html>

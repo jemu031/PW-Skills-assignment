@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #fname {
+        background-color: rgb(182, 228, 243);
+      }
+      #lname {
+        background-color: rgb(182, 228, 243);
+      }
+      #email {
+        background-color: beige;
+      }
+      #password {
+        background-color: aliceblue;
+      }
+      #terms:checked {
+        accent-color: violet;
+      }
+      #gender {
+        background: linear-gradient(
+          90deg,
+          rgb(230, 42, 196) 0%,
+          rgb(42, 173, 230) 100%
+        );
+      }
+      #gender #male {
+        background-color: rgb(42, 173, 230);
+      }
+      #gender #female {
+        background-color: rgb(230, 42, 196);
+      }
+      .bottom_button--reset {
+        background: rgb(234, 14, 14);
+        background: linear-gradient(
+          143deg,
+          rgba(234, 14, 14, 1) 0%,
+          rgba(6, 6, 118, 1) 50%,
+          rgba(201, 159, 159, 1) 100%
+        );
+        color: white;
+        opacity: 50%;
+      }
+      .bottom_button--submit {
+        background: rgb(234, 14, 14);
+        background: linear-gradient(
+          143deg,
+          rgba(234, 14, 14, 1) 0%,
+          rgba(6, 6, 118, 1) 50%,
+          rgba(201, 159, 159, 1) 100%
+        );
+        color: white;
+        opacity: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <form clas="Form" action="">
+      <div>
+        <label for="fname">Firstname: </label>
+        <input type="text" id="fname" name="fname" placeholder="Jaimin" />
+      </div>
+      <br />
+      <div>
+        <label for="lname">Lastname: </label>
+        <input type="text" id="lname" name="lname" placeholder="Kanpariya" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Jaiminkanpariya@gmail.com"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="********"
+          maxlength="8"
+          minlength="8"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="male" id="male">Male</option>
+          <option value="female" id="female">Female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="0"
+          max="100"
+          placeholder="1"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="terms">
+          <input type="checkbox" name="terms" id="terms" />
+          I agree to the terms and condition</label
+        >
+      </div>
+      <br />
+      <div bottom>
+        <input class="bottom_button--reset" type="reset" value="Reset" />
+        <input class="bottom_button--submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

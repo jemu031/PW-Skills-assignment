@@ -1,0 +1,9 @@
+HTML entities are the reserved characters that have special meaning when used in an HTML document. Each of these codes starts with an ampersand and ends with a semicolon. And in somne scenario there are some keywords that are reserved for HTMl Such as <, >, & etc. So i we want to use these keyword it can be done by HTML entities.
+
+Most Commonly used HTML entities are:
+<: &lt;
+>: &gt;
+&: &amp:
+": &quot;
+©: &copy;
+€: &euro

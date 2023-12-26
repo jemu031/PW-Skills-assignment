@@ -1,0 +1,12 @@
+ul a{
+   
+    list-style-type: none;
+    text-decoration: underline;
+}
+ul li{
+    display: inline;
+}
+
+li + li {
+    margin: 10px;
+}

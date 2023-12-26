@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --primary-button-bg-color: #00b7ff;
+        --secondary-button-bg-color: #6c757d;
+        --button-width: 150px;
+        --button-height: 30px;
+        --button-color: white;
+        --button-border: none;
+      }
+
+      .button1 {
+        background-color: var(--primary-button-bg-color);
+        width: var(--button-width);
+        height: var(--button-height);
+        color: var(--button-color);
+        border: var(--button-border);
+      }
+
+      .button2 {
+        background-color: var(--secondary-button-bg-color);
+        width: var(--button-width);
+        height: var(--button-height);
+        color: var(--button-color);
+        border: var(--button-border);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      The var() function in CSS is used to insert the value of a custom property
+      (CSS variable). It allows to define a variable once and reuse it
+      throughout the stylesheet.
+    </p>
+    <br />
+    <button class="button1">Primary Button</button>
+    <button class="button2">Seconary Button</button>
+  </body>
+</html>

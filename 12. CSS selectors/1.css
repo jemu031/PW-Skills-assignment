@@ -1,0 +1,41 @@
+/*B*/
+nav ul li a{
+   
+    color: red;
+}
+
+nav>h2{
+    color: white;
+    background-color: rgba(0, 0, 255, 0.452);
+    display: inline-block;
+}
+div + p{
+    color: red;
+}
+/*C*/
+a[href]{
+    text-decoration: none;
+}
+a[class="active"]{
+    color: #FFf;
+    text-decoration: underline;
+}
+a[target="_self"]{
+    background-color: rgb(42, 42, 165);
+}
+ 
+/*D*/
+
+nav :nth-child(5)::after{
+    content: "...";
+}
+
+li::marker{
+    color: darkgreen  ;
+}
+
+nav p:nth-child(even)::first-letter{
+    color: red;
+    font-size: 30pt;
+    font-weight: bold;
+}

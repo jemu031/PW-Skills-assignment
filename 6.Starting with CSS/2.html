@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .textsamples_paragraph--bold {
+        font-weight: bold;
+      }
+      .textsamples_paragraph--italic {
+        font-style: italic;
+      }
+      .textsamples_paragraph--underline {
+        text-decoration: underline;
+      }
+      .textsamples_paragraph--highlight {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="textsamples">
+      <p class="textsamples_paragraph--bold">This is a bold text</p>
+      <p class="textsamples_paragraph--italic">This is an Italic Text</p>
+      <p class="textsamples_paragraph--underline">This is an underlined text</p>
+      <p class="textsamples_paragraph--linethrough">This is linethrough text</p>
+    </div>
+
+    <br />
+    <div class="explanation">
+      This follows the BEM convention where:
+      <ol>
+        <li>.textsamples is the block (the main component).</li>
+        <li>_paragraph is an element name</li>
+        <li>
+          _paragraph--bold, _paragraph--italic, etc., are modifiers that alter
+          the appearance or behavior of the block.
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

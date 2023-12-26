@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 97vh;
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+          "A A B"
+          "C D B";
+      }
+      .child {
+        background-color: peachpuff;
+        border-radius: 15px;
+        padding-top: 50px;
+        padding-left: 50px;
+        font-size: 30px;
+        align-items: center;
+      }
+      .a {
+        grid-area: A;
+      }
+      .b {
+        grid-area: B;
+      }
+      .c {
+        grid-area: C;
+      }
+      .d {
+        grid-area: D;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child a">A</div>
+      <div class="child b">B</div>
+      <div class="child c">C</div>
+      <div class="child d">D</div>
+    </div>
+  </body>
+</html>

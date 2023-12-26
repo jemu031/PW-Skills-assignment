@@ -1,0 +1,22 @@
+Tag & Elements
+HTML tags are used to hold elements. HTML tag starts with < and ends with.
+HTML element holds the content. Whatever written within a HTML tag are HTML elements.
+
+<head> --> opening tag
+   content               } this whole is called element
+</head> --> closing tag
+
+
+
+Some common examples of tags are,
+<html></html>
+<head></head>
+<body>
+  </body>
+<p></p>
+<h1></h1>
+
+There are some self-closing tags such as,
+<br>
+<hr>
+<meta...>

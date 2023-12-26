@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irctc</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.irctc.co.in/nget/assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/51cfccf9bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .home {
+        display: flex;
+        justify-content: center;
+      }
+      .left {
+        width: 35vw;
+        height: 100vh;
+        padding-top: 30px;
+        padding-left: 30px;
+        background-color: white;
+      }
+      .right {
+        width: 35vw;
+        height: 100vh;
+        display: flex;
+        background-image: url(image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: flex-end;
+      }
+      .right .bars {
+        display: flex;
+        border-radius: 9px;
+        margin-top: 25px;
+        margin-right: 25px;
+        background-color: #213d77;
+        text-decoration: none;
+        opacity: 75%;
+        width: 2em;
+        height: 2em;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+      }
+      nav {
+        display: flex;
+        margin-right: 30px;
+        justify-content: space-between;
+      }
+
+      .logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 170px;
+        height: 50px;
+      }
+      .logos img {
+        max-width: 50px;
+        max-height: 100%;
+      }
+      .menu {
+        font-size: 15px;
+        width: 250px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menu a {
+        color: black;
+        text-decoration: none;
+      }
+      .menu button {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        font-size: 10px;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      .menu_nav {
+        display: flex;
+        width: 140px;
+        justify-content: space-between;
+        font-size: 10px;
+        padding-right: 7px;
+      }
+      header {
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 91%;
+        height: max-content;
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      header .heading {
+        font-size: 18px;
+      }
+      header .quote {
+        display: flex;
+        width: 14em;
+        font-size: 21px;
+        justify-content: space-between;
+      }
+      .main_image {
+        display: flex;
+      }
+      .subbutton {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 30px;
+        width: 91%;
+        cursor: pointer;
+        justify-content: space-between;
+      }
+      .subbutton button {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        font-size: 15px;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      .search {
+        width: 91%;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .search_child {
+        border-radius: 7px;
+        margin-top: 30px;
+        width: 100%;
+
+        padding: 15px;
+        display: flex;
+        border: 1px solid #ccc;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .search_child .from {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .from,
+      .to {
+        width: 36%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+      }
+      .class,
+      .seat_type {
+        width: 23%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+      }
+      .time {
+        width: 35%;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .alter_search img {
+        width: 35px;
+        height: 35px;
+      }
+      .search span {
+        font-size: 13px;
+      }
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+      }
+      .dropdown h2 {
+        font-size: 20px;
+      }
+      .search_train {
+        border: transparent;
+        padding: 0 0px;
+      }
+      .search_child button {
+        display: flex;
+        height: 45px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #01bb0a;
+        border: #01bb0a;
+        justify-content: center;
+        color: #fff;
+        font-size: 23px;
+        font-weight: bold;
+        align-items: center;
+      }
+      .other_option {
+        display: flex;
+        flex-wrap: wrap;
+        height: 60px;
+        justify-content: flex-start;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <div class="left">
+        <nav>
+          <div class="logos">
+            <img
+              src="https://www.irctc.co.in/nget/assets/images/logo.png"
+              alt=""
+            />
+            <img
+              src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="menu">
+            <div class="menu_nav">
+              <a href="#">Ask Disha</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Alerts</a>
+            </div>
+            <div class="menu_button">
+              <button
+                style="background-color: #fb792b; color: #fff; border: #fb792b"
+              >
+                login
+              </button>
+              <button>Register</button>
+              <button>Agent Login</button>
+            </div>
+          </div>
+        </nav>
+        <header class="header">
+          <div class="heading">
+            <h1>Indian Railways</h1>
+          </div>
+          <div class="main_image">
+            <img src="image 12.png" alt="" />
+            <img src="image 13.png" alt="" />
+          </div>
+          <div class="quote">
+            <p>
+              <span style="color: #01bb0a">Safety</span>
+            </p>
+            <p><span style="color: #fb792b">Security</span></p>
+            <p><span style="color: #213d77">Punctuality</span></p>
+          </div>
+        </header>
+        <div class="subbutton">
+          <button style="background-color: #213d77; color: #fff">
+            <i class="fa-solid fa-ticket"></i> &nbsp; Book Ticket
+          </button>
+          <button><i class="fa-solid fa-check"></i>&nbsp; PNR Status</button>
+          <button>
+            <i class="fa-solid fa-bars-progress"></i>&nbsp;Charts/Vacancy
+          </button>
+        </div>
+        <div class="search">
+          <div class="search_child search_location">
+            <div class="from">
+              <div class="icon">
+                <img src="ic-search-from-desktop.png" alt="" />
+              </div>
+              <div class="dropdown">
+                <div>
+                  <span>From</span>
+                  <img src="Vector.png" alt="" />
+                </div>
+                <div class="select-from">
+                  <h2>Banglore</h2>
+                  <p>KSR - Bangalore</p>
+                </div>
+              </div>
+            </div>
+            <div class="alter_search">
+              <a href="#"><img src="alter.png" alt="" /></a>
+            </div>
+            <div class="to">
+              <div class="icon">
+                <img src="ic-search-to-desktop.png" alt="" />
+              </div>
+
+              <div class="dropdown">
+                <div>
+                  <div>
+                    <span>To</span>
+                    <img src="Vector.png" alt="" />
+                  </div>
+                  <div class="select-to">
+                    <h2>Kasaragod</h2>
+                    <p>KSD - Kasaragod</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search_child search_more">
+            <div class="time">
+              <img src="ic-search-calender-desktop.png" alt="" />
+              <div class="dropdown">
+                <div><span>Date</span> <img src="Vector.png" alt="" /></div>
+                <div class="select_date">
+                  <h2>01 Aug 2023</h2>
+                  <p>Tuesday</p>
+                </div>
+              </div>
+            </div>
+            <div class="class">
+              <img src="class.png" alt="" />
+              <div class="dropdown">
+                <div><span>Class</span> <img src="Vector.png" alt="" /></div>
+                <div>
+                  <div class="select_class">
+                    <h2>3A</h2>
+                    <p>AC 3 Tier</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seat_type">
+              <img src="seat_type.png" alt="" />
+              <div class="dropdown">
+                <div>
+                  <div>
+                    <span>Seat Type</span> <img src="Vector.png" alt="" />
+                  </div>
+                  <div>
+                    <div class="select_date">
+                      <h2>Tatkal</h2>
+                      <p>AC 3 Tier</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search_child other_option">
+            <div>
+              <input type="checkbox" id="Disability" value="Disability" />
+              <label for="Disability">Person with Disability Concession</label>
+            </div>
+            <div>
+              <input type="checkbox" id="flexible" name="form" />
+              <label for="flexible">Flexible With Date</label>
+            </div>
+            <div>
+              <input type="checkbox" id="available" name="form" />
+              <label for="available">Train with Available Berth</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Pass" name="form" />
+              <label for="Pass">Railway Pass Concession</label>
+            </div>
+          </div>
+          <div class="search_child search_train">
+            <button>Search Train &nbsp; <img src="arrow.png" alt="" /></button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

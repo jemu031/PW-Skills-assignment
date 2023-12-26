@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      video {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>USing The feature of HTML5</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <p>
+        Using Resoponsive images Feature: The srcset attribute in HTML5 is used
+        to provide multiple sources and sizes for an image, allowing the browser
+        to choose the most appropriate one based on factors such as screen size
+        and resolution.
+      </p>
+      <img
+        src="https://picsum.photos/200"
+        alt="This is a random image"
+        srcset="
+          https://picsum.photos/200  320w,
+          https://picsum.photos/456  560w,
+          https://picsum.photos/956 1200w
+        "
+      />
+    </main>
+    <section>
+      <p>HTML 5 allows us to use Fieldset to increase accessibility</p>
+      <form>
+        <fieldset>
+          <legend>Using New Input type of form and fieldset</legend>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" />
+
+          <label for="website">Website:</label>
+          <input type="url" id="website" name="website" />
+
+          <label for="volume">Volume:</label>
+          <input type="range" id="volume" name="volume" min="0" max="100" />
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <h2>Using Audio & Video</h2>
+      <p>
+        Before the introduction of the audio> and video tags in HTML5, web
+        developers often relied on third-party plugins, such as Adobe Flash or
+        Microsoft Silverlight, to embed audio and video content in web pages.
+        But now these elements enhance the user experience by allowing
+        developers to integrate media content seamlessly.
+      </p>
+      <audio
+        controls
+        muted
+        src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3"
+      ></audio>
+      <video
+        controls
+        muted
+        src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+      ></video>
+    </section>
+    <hr />
+    <footer>
+      Footer goes here
+      <a href="#">Go to top</a>
+    </footer>
+  </body>
+</html>

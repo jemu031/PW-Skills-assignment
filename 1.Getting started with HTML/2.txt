@@ -1,0 +1,7 @@
+Purpose of comments in HTML:
+If there is some content that we do not want it to be rendered on our website than comments are being used! for example text note that gives an explanation about the code which can help us when we want to edit the code at a later date.
+To use comments in HTML documents simply go to the line that we don’t want it to be rendered and press ctrl + / and... it’s done. 
+The syntax is <! -- contents that we don’t want it to be rendered -->
+ 
+for the multiline comments the same syntax is used <!-- ……multiline -->
+ 

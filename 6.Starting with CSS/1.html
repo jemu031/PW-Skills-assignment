@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css" />
+    <style>
+      /*Internal CSS*/
+      .Internal {
+        color: red;
+      }
+      /*Inline vs Internal*/
+      .inint {
+        color: green;
+      }
+
+      /*Internal Vs Ecxternal*/
+      .intex {
+        color: brown;
+      }
+      /*Inline vs Internal Vs Ec=xternal*/
+      .inintex {
+        color: rgb(8, 194, 132);
+      }
+    </style>
+  </head>
+  <body>
+    <!--Inline CSS-->
+    <div class="Inline" style="color: blue">
+      This is styled with the help of Inline CSS
+    </div>
+    <!--Internal CSS-->
+    <div class="Internal">This is styled with the help of Internal CSS</div>
+    <!--External CSS-->
+    <div class="External">This is styled with the help of External CSS</div>
+
+    <!--Inline || Internal-->
+    <div class="ININT" style="color: blueviolet">
+      Checking the priority of Inline vs Internal
+    </div>
+    <!--Inline || External-->
+    <div class="inex" style="color: lightblue">
+      Checking the priority of Inline vs External
+    </div>
+    <!--Internal || External-->
+    <div class="intex">Checking the priority of Internal vs External</div>
+    <!--Inline || Internal || External-->
+    <div class="inintex" style="color: rgb(6, 83, 55)">
+      Checking the priority of Inline vs Internal vs External
+    </div>
+  </body>
+</html>

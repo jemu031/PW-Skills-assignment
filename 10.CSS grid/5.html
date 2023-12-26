@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        height: 200px;
+        background-color: rgb(190, 89, 89);
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+      }
+      .item {
+        border: 2px solid aliceblue;
+      }
+      .item6 {
+        justify-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        In CSS Grid, both justify-items and justify-self are properties used to
+        align grid items along the inline (horizontal) axis. However, they are
+        applied at different levels:
+      </p>
+      <p>
+        <strong>justify-items:</strong>This property is applied to the grid
+        container and defines the default alignment for all grid items within
+        the grid.
+      </p>
+      <p>
+        <strong>justify-self:</strong> This property is applied to individual
+        grid items and allows you to override the default alignment set by
+        justify-items for a specific item.
+      </p>
+    </div>
+
+    <div class="container1">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item item6">6</div>
+    </div>
+  </body>
+</html>
